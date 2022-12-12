@@ -1,0 +1,431 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #c5c5c5; 
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/*dimension del header, imagen y titulo*/
+
+#header{
+    background-color: #333;
+    height: 180px;
+}
+    #header img{
+        margin-top: 12px;
+    }
+    #header h2{
+        color: rgb(255, 255, 255);
+        margin-left: 350px;
+        margin-top: -90px;
+        display: flex;
+
+    }
+    #header h2:hover{
+        color:#03989e;
+    }
+
+/*enlaces a las secciones*/
+
+    nav{
+        float: right;
+        display: flex;
+        height: 100px;
+        margin-top: -85px;
+        color: rgb(255, 255, 255);
+    }
+        nav ul{
+            list-style: none;
+        }
+            nav ul li{
+                display: inline-block;
+                line-height: 80px;
+                padding: 0 30px ;
+                list-style: none;
+                
+            }
+
+            /*enlaces sin estilo*/
+            a:link, a:visited, a:active {
+                text-decoration:none;
+                color: white;
+            }
+            a:hover{
+                color: black;
+            }
+            
+            /*Un CTA es una llamada a la accion, es decir, debemos destacar al usuario el elemento con más interés*/
+            #header .bloque_titulo #cta{
+                background-color: #ff891b;
+                border-radius: 100px;
+            }
+
+/*Dando formato a la imagen*/
+
+#img{
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #03989e;
+}
+
+/*contenido*/
+
+#cuerpo{
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1); /*borde con sombra*/
+    
+}
+
+ .secciones h1{
+    margin: 0;
+    padding: 20px;
+ }
+    #cuerpo .secciones{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #cuerpo div p{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /*Los botones se duplica el codigo ya que cada uno ocupa una posicion diferente*/
+    .boton_perfil{
+        background-color: #03989e;
+        margin-top: 30px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .boton{
+        background-color: #03989e;
+        margin-top: 30px;
+        border: 1px solid black;
+        margin-left: 150px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+    .boton_estudios{
+        background-color: #03989e;
+        margin-top: 30px;
+        border: 1px solid black;
+        margin-left: 410px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+
+
+
+    #img_usuario{
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+    }
+
+
+    #estudios{
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+
+    #estudios p{
+        max-width: 300px;
+        width: 90%;
+        margin: 30px 450px;
+        text-align: justify;
+    }
+
+    #estudios #img_estudios{
+        padding: 0;
+        margin: 0;
+        margin-right: 450px;
+        width: 200px;
+        height: 200px;
+        margin-top: -170px;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+    }
+    #estudios #img_ifp{
+        padding: 0;
+        margin: 0;
+        margin-right: 425px;
+        width: 250px;
+        height: 100px;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        margin-top: 40px;
+    }
+
+    #estudios #logos{
+        margin-top: 20px;
+        margin-right: 270px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #experiencia h1{
+        text-align: center;
+    }
+
+    #experiencia p{
+        margin-top: 100px;
+        max-width: 300px;
+        width: 90%;
+        margin: 30px 50px;
+        text-align: justify;
+    }
+
+    #img_exlaboral{
+        padding-bottom: 50px;
+        margin: 0;
+        width: 400px;
+        height: 260px;
+        margin-top: -150px;
+        margin-right: 20px;
+    }
+
+    /*footer*/
+.pie_pagina{
+    width: 100%;
+    background-color: #333;
+}
+.pie_pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie_pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie_pagina .grupo1 .box figure img{
+    width: 250px;
+    margin-top: -50px;
+
+}
+.pie_pagina .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+
+}
+.pie_pagina .grupo1 .box h2:hover{
+    color: #03989e;
+}
+
+.pie_pagina .grupo1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    
+
+}
+.pie_pagina .grupo1 .redes_sociales a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color:  #333;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+.pie_pagina .grupo1 .redes_sociales a img{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 7px;
+}
+
+.pie_pagina .grupo2{
+    background-color: #03989e;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+.pie_pagina .grupo2 small{
+    font-size: 15px;
+}
+
+/*perfil.html*/
+
+#cuerpo .secciones img{
+    margin-right: 10px;
+    width: 150px;
+    height: 200px;
+    margin-top: -50px;
+}
+#cuerpo .objetivos{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+#cuerpo .objetivos img{
+    width: 300px;
+    height: 150px;
+    margin-top: -70px;
+}
+
+#cuerpo .aptitudes{
+    margin-top: 150px;
+    margin-left: 500px;
+}
+#cuerpo .aptitudes img{
+    margin-right: 400px;
+    margin-top: -70px;
+    border-radius: 10px;
+}
+
+#cuerpo .habilidades{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+
+#cuerpo .habilidades #logos_perfil{
+    width: 100px;
+    height: 50px;
+    margin-right: 200px;
+    margin-top: -100px;
+}
+
+/*estudios.html*/
+#cuerpo .formacion_academica h1{
+    text-align: center;
+    padding: 20px;
+}
+#cuerpo .formacion_academica .primaria{
+    text-align: left;
+    margin-left: 200px;
+    padding: 50px;
+}
+#cuerpo .formacion_academica .eso{
+    text-align: left;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+#cuerpo .formacion_academica .carrera{
+    margin-top: 300px;
+    text-align: left;
+    margin-left: 200px;
+}
+
+#cuerpo .formacion_academica .grsup{
+    margin-top: 300px;
+    text-align: left;
+    margin-left: 200px;
+}
+
+#cuerpo .formacion_academica img{
+    margin-top: 50px;
+    margin-right: 250px;
+    width: 300px;
+    height: 200px;
+    border: 1px outset gray;
+}
+
+#cuerpo .idiomas{
+    margin-top: 300px;
+}
+#cuerpo .idiomas p{
+    margin-top: 200px;
+}
+
+#cuerpo .idiomas h1{
+    text-align: center;
+}
+#cuerpo .idiomas img{
+    margin-top: -100px;
+    width: 300px;
+    margin-right: 250px;
+    height: 100px;
+}
+/*experiencia_laboral.html*/
+
+#cuerpo .lugares h1{
+    text-align: center;
+    padding: 30px;
+
+}
+
+#cuerpo .lugares p{
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#cuerpo .lugares .parr1{
+    margin-top: 400px;
+}
+#cuerpo .lugares .parr2{
+    padding-bottom: 50px;
+}
+
+#cuerpo .lugares img{
+    margin-right: 270px;
+    margin-top: -500px;
+    width: 250px;
+    height: 320px;
+}
+
+/*Contacto.html*/
+#cuerpo .contacto h1{
+    padding-top: 20px;
+    text-align: center;
+}
+#cuerpo .contacto p {
+    text-align: left;
+    margin-left: 150px;
+}
+#cuerpo .contacto p a{
+    color:#03989e;
+}
+#cuerpo .contacto #ubi{
+    margin-bottom: 200px;
+}
+#cuerpo .contacto .iconos{
+    width: 50px;
+    margin-top: -550px;
+    margin-left: 600px;
+}
+#cuerpo .contacto .iconos img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+
+
+/*prueba de responsive para el footer*/
+@media screen and (max-width:800px) {
+    .pie_pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+
+
+
+    
